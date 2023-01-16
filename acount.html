@@ -34,16 +34,10 @@
             font-weight: bold;
             margin-bottom: 4px;
         }
-        .input{
-            background-color: var(--text-input-field);
-            border:none;
-            border-radius: 8px;
+        .value{
+            color: var(--very-light-pink);
             font-size: var(--md);
-            padding: 8px;
-            margin-bottom: 16px;
-        }
-        .input-name, .input-email, .input-password{
-            margin-bottom: 24px;
+            margin: 8px 0px 32px;
         }
         .login-btn{
             margin-top: 16px;
@@ -57,7 +51,7 @@
                 margin-bottom: 100px;
             }
 
-            .primary-btn{
+            .secondary-btn{
             margin-top: 100%;
             
             }
@@ -71,12 +65,12 @@
             <h1 class="title">My account</h1>
         <form action="/" class="form">
         <label for="name" class="label">Name</label>
-        <input type="text" class="input input-name" id="name">
+        <p class="value">Camila Yokoo</p>
         <label for="email" class="label">Email address</label>
-        <input type="password" id="password" placeholder="email@example.com" class="input input-email">
+        <p class="value">camilayokoo@gmail.com</p>
         <label for="password" class="label">Password</label>
-        <input type="password" id="new-password" placeholder="*********" class="input input-password">
-        <input type="submit" value="Create" class="primary-btn login-btn">
+        <p class="value">***********</p>
+        <input type="submit" value="Edit" class="secondary-btn login-btn">
         </form>
         </div>
     </div>
