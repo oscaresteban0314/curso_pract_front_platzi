@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        .add-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .product-detail-close img{
+            background-color: var(--white);
+            cursor: pointer;
+            position: absolute;
+            top: 24px;
+            left:24px;
+            width: 14px;
+            height: 14px;
+            padding: 12px;
+            border-radius: 50%;
+        }
+        .product-detail{
+            width: 360px;
+            padding-bottom: 24px;
+        }
+        .product-detail > img:nth-child(2){
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 0 0 20px 20px;
+        }
+        .product-info{
+            margin: 0 24px;
+        }
+        .product-info p:not(:nth-child(1)){
+            color:var(--very-light-pink) ;
+            font-size: var(--md);
+        }
+        .product-info p:nth-child(1){
+            font-weight: bold;
+            margin: 20px 0px 8px;
+            font-size: var(--lg);
+        }
+        .product-info p:nth-child(2){
+            margin: 0;
+        }
+        .product-info p:nth-child(3){
+            margin-bottom: 50px;
+        }
+        @media(max-width:640px) {
+            .product-detail{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="product-detail-close">
+            <img src="assets/icons/icon_close.png" alt=" close">
+        </div>
+        
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
+
+        <div class="product-info">
+            <p>$35,00</p>
+            <p>Bike</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum laborum libero consequatur accusantium consequuntur culpa veritatis fuga quis delectus, et hic, quia placeat quasi rem quos adipisci exercitationem mollitia voluptatem!</p>
+            <button class="primary-btn add-btn">
+                <img src="/assets/icons/bt_add_to_cart.svg" alt="">Add to cart
+            </button>
+        </div>
+    </aside>
+   
+</body>
+</html>
