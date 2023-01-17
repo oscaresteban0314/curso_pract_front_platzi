@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        nav{
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid var(--very-light-pink);
+            justify-content: space-between;
+            padding: 0px;
+        }
+        .menu{
+            display: none;
+        }
+        .logo-nav{
+            width: 150px;
+            margin-top: 0;
+
+        }
+        .navbar-left{
+            display: flex;
+           
+        }
+        .navbar-left ul li a{
+            text-decoration: none;
+            font-size: var(--lg);
+            color: var(--very-light-pink);
+            border: 1px solid var(--white);
+            border-radius: 8px;
+            padding: 8px;
+        }
+        .navbar-left ul li a:hover{
+            color: var(--hospital-green);
+            border: 1px solid var(--hospital-green);
+        }
+        .navbar-left ul, .navbar-right ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+        .navbar-left ul{
+            margin-left: 12px;
+        }
+
+        /* nav right */
+        .nav-email{
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+        }
+        .nav-shoping-card{
+            position: relative;
+        }
+        .nav-shoping-card div{
+            position: absolute;
+            top: 0px;
+            right: 5px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            font-weight:bold;
+            font-size: var(--sm);
+        }
+        /* responsive */
+        @media(max-width:640px){
+            .menu{
+                display: flex;
+            }
+            .navbar-left ul{
+                display: none;
+            }
+            .nav-email{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./assets/icons/icon_menu.svg" alt="menu" class="menu">
+        <div class="navbar-left">
+            <img src="./assets/logos/logo_yard_sale.svg" alt="logo" class="logo-nav">
+            <ul>
+                <li>
+                    <a href="">All</a>
+                </li>
+                <li> 
+                    <a href="">Clothes</a>
+                </li>
+                <li>
+                    <a href="">Electronis</a>
+                </li>
+                <li>
+                    <a href="">Furniture</a>
+                </li>
+                <li>
+                    <a href="">Toys</a>
+                </li>
+                <li>
+                    <a href="">Others</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li class="nav-email">
+                    camilayokoo@gmail.com
+                </li>
+                <li class="nav-shoping-card"> 
+                    <img src="./assets/icons/icon_shopping_cart_notification.svg" alt="" height="40px" width="40px">
+                    <div>3</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
